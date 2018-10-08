@@ -7,13 +7,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="251.0" prefWidth="379.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="calculador.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="251.0" prefWidth="379.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculador.FXMLDocumentController">
     <children>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <PasswordField fx:id="txtpass" layoutX="103.0" layoutY="115.0" promptText="Senha" />
+      <PasswordField fx:id="txtpass" layoutX="103.0" layoutY="124.0" promptText="Senha" />
       <TextField fx:id="txtlogin" layoutX="103.0" layoutY="85.0" promptText="User" />
-      <Button layoutX="292.0" layoutY="210.0" mnemonicParsing="false" text="Cancelar" />
-      <Button layoutX="227.0" layoutY="210.0" mnemonicParsing="false" text="Login" />
+      <Button layoutX="292.0" layoutY="210.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Button fx:id="btnLogin" layoutX="227.0" layoutY="210.0" mnemonicParsing="false" onAction="#login" text="Login" />
       <Label layoutX="134.0" layoutY="55.0" prefHeight="23.0" prefWidth="105.0" text="Calculadora">
          <font>
             <Font size="18.0" />

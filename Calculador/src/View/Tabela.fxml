@@ -3,14 +3,19 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controll.TabelaController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controll.TabelaController">
    <children>
-      <TableView fx:id="Tbtabela" layoutX="112.0" layoutY="70.0" prefHeight="261.0" prefWidth="405.0">
+      <TableView fx:id="Tbtabela" layoutX="107.0" layoutY="70.0" prefHeight="261.0" prefWidth="405.0">
         <columns>
-          <TableColumn fx:id="tbcod" prefWidth="75.0" text="Código" />
+          <TableColumn fx:id="Codigo" text="Codigo">
+              <cellValueFactory>
+                  <PropertyValueFactory property="id" /> 
+              </cellValueFactory>
+          </TableColumn>
           <TableColumn fx:id="tbprim" prefWidth="91.0" text="PrimeiroValor" />
             <TableColumn fx:id="tbsegun" prefWidth="93.0" text="SegundoValor" />
             <TableColumn fx:id="tbopera" prefWidth="69.0" text="Operador" />
