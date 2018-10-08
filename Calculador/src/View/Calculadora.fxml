@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="308.0" prefWidth="325.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="Controll.CalculadoraController">
+   <children>
+      <TextField fx:id="txt1" layoutX="14.0" layoutY="39.0" promptText="Numero 1" />
+      <TextField fx:id="txt2" layoutX="14.0" layoutY="90.0" promptText="Numero 2" />
+      <Button fx:id="btnSoma" layoutX="96.0" layoutY="243.0" mnemonicParsing="false" onAction="#soma" prefHeight="44.0" prefWidth="58.0" text="Soma" />
+      <TextField fx:id="txtResultado" layoutX="14.0" layoutY="149.0" prefHeight="31.0" prefWidth="92.0" promptText="Resultado" />
+      <Button fx:id="btnDivisão" layoutX="240.0" layoutY="243.0" mnemonicParsing="false" onAction="#divisão" prefHeight="44.0" prefWidth="71.0" text="Divisão" />
+      <Button fx:id="btnSub" layoutX="172.0" layoutY="243.0" mnemonicParsing="false" onAction="#sub" prefHeight="44.0" prefWidth="58.0" text="Sub." />
+      <Button fx:id="btnMult" layoutX="14.0" layoutY="243.0" mnemonicParsing="false" onAction="#mult" prefHeight="44.0" prefWidth="58.0" text="Mult." />
+      <MenuBar layoutY="-2.0" prefHeight="32.0" prefWidth="325.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Exibir">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Histórico" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="btnLimpar" layoutX="14.0" layoutY="189.0" mnemonicParsing="false" onAction="#Limpar" prefHeight="17.0" prefWidth="92.0" text="Limpar" />
+   </children>
+</AnchorPane>
