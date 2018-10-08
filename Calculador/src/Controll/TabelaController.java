@@ -48,17 +48,17 @@ public class TabelaController implements Initializable {
     }    
     
     private void listar(){
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("focus");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cal");
         EntityManager em = emf.createEntityManager();
                 
         // import javax.persistence.Query;
         Query query = em.createQuery("SELECT a FROM Historico as a");
         // import java.util.List;
         // import br.edu.ifro.model.Aluno;
-        List<Historico.Historico> cliente = query.getResultList();
+        List<Historico.Historico> hist = query.getResultList();
         // import javafx.collections.ObservableList;
         // import javafx.collections.FXCollections;
-        ObservableList oCliente = FXCollections.observableArrayList(cliente); 
-        Tbtabela.setItems(oCliente);
+        ObservableList ohist = FXCollections.observableArrayList(hist); 
+        Tbtabela.setItems(ohist);
     }
 }

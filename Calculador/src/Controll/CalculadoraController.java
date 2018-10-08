@@ -59,6 +59,7 @@ public class CalculadoraController implements Initializable {
         
         hist.setPrimeiroValor(txt1.getText());
         hist.setSegundoValor(txt2.getText());
+        hist.setSegundoValor(txtResultado.getText());
         hist.setOperador("+");
         
         em.getTransaction().begin();
@@ -72,6 +73,7 @@ public class CalculadoraController implements Initializable {
         
        double tx1 = Double.parseDouble(txt1.getText()); 
        double tx2 = Double.parseDouble(txt2.getText());
+       
        double result;
        
        result = tx1 + tx2;
